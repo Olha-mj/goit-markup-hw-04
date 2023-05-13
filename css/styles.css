@@ -165,11 +165,18 @@ button:focus {
   align-items: center;
   flex-direction: column;
   gap: 48px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/bg.jpg);
+  background-size: cover;
+  height: auto;
 }
 
 .hero {
   background-color: var(--hero-color);
-  padding: 188px 0;
+  /* padding: 188px 0; */
 }
 .page-main-title {
   font-weight: 700;
@@ -180,6 +187,7 @@ button:focus {
   height: 120px;
   text-align: center;
   color: var(--page-background-color);
+  margin-top: 188px;
 }
 .order-button {
   background-color: var(--logo-brand-color);
@@ -194,8 +202,14 @@ button:focus {
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin-bottom: 188px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.order-button:hover,
+.order-button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -219,11 +233,25 @@ button:focus {
 
 /* ---------Our Advantages Section--------- */
 
-/* .section {
-  padding-top: 120px;
-  padding-bottom: 120px; */
-/* } */
+.advantages-img-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 8px;
+}
 
+.advantages-img-list-item {
+  display: flex;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  background-color: var(--light-mode-background-color);
+  border-radius: 4px;
+}
+
+.advantages-img-icon {
+  margin: 24px 100px;
+}
 .services-section-title {
   margin-bottom: 72px;
 }
@@ -280,11 +308,12 @@ button:focus {
 .our-team-list {
   display: flex;
   gap: 24px;
-  /* flex-basis: calc(100% - 48px / 3); */
 }
 
 .our-team-list-item {
   width: calc(100% - 72px / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-text {
@@ -312,10 +341,54 @@ button:focus {
   background-color: var(--page-background-color);
 }
 
+/* Customers Section */
+
+.customers-section {
+  margin: 120px 0;
+}
+
+.customers-section-title {
+  margin-bottom: 72px;
+}
+
+.customers-list-icon {
+  margin: 16px 32px;
+  fill: var(--helper-text-color);
+}
+
+.customers-list-icon:hover {
+  fill: var(--pressed-state-color);
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-list-link {
+  display: flex;
+}
+.customers-list-item {
+  display: flex;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border-radius: 4px;
+  border: 1px solid var(--helper-text-color);
+}
+
+.customers-list-item:hover,
+.customers-list-item:focus {
+  border-color: var(--pressed-state-color);
+}
+
 /* ---------------Footer--------------- */
 
 .footer-container {
   column-gap: 12px;
+  display: flex;
+  gap: 120px;
 }
 
 .page-footer {
@@ -338,6 +411,14 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--logo-brand-color);
   text-transform: uppercase;
+}
+
+.social-media-footer {
+}
+
+.social-media-text {
+  margin-bottom: 16px;
+  padding-left: 16px;
 }
 
 /*---------------- Portfolio Page-------------- */
@@ -402,4 +483,32 @@ button:focus {
 .portfolio-description-text {
   text-align: left;
   margin-top: 8px;
+}
+
+/* Social Media Icons */
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.social-list-icon {
+  fill: var(--light-mode-background-color);
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--logo-brand-color);
+  align-items: center;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--success-messages-color);
 }
