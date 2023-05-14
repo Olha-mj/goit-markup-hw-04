@@ -418,8 +418,11 @@ button:focus {
 
 .footer-container {
   display: flex;
-  gap: 120px;
   align-items: baseline;
+}
+
+.footer-info {
+  margin-right: 120px;
 }
 
 .page-footer {
