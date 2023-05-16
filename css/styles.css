@@ -546,6 +546,7 @@ button:focus {
 .portfolio-description-text {
   text-align: left;
   margin-top: 8px;
+  color: var(--body-text-color);
 }
 
 /* Social Media Icons */
